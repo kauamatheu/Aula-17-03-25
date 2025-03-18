@@ -14,44 +14,46 @@
                     <legend>1 Dados Pessoais</legend>  
                 
                     <label for="txtName">Nome:</label>
-                    <input type="text" id="txtName" name="txtName">
+                    <input type="text" id="txtName" name="txtName"><br><br>
                     
                     <label for="txtEmail">Email:</label>
-                    <input type="text" id="txtEmail" name="txtEmail">
+                    <input type="text" id="txtEmail" name="txtEmail"><br><br>
                     
                     <label for="txtSenha">Senha:</label>
-                    <input type="password" id="txtSenha" name="txtSenha">
+                    <input type="password" id="txtSenha" name="txtSenha"><br><br>
 
                     <label for="txtConfSenha">Confirmar Senha:</label>
-                    <input type="password" id="txtConfSenha" name="txtConfSenha">
+                    <input type="password" id="txtConfSenha" name="txtConfSenha"><br><br>
                     
-                    <label for="txtIdade">Idade:</label>
-                    <input type="radio" id="idMenor">
+                    <label for="txtIdade">Idade:</label><br>
+                    <input type="radio" id="idMenor" name="idade" value="Menor que 17 anos">
                     <label for="idMenor">Menor que 17 anos</label><br>
-                    <input type="radio" id="idMaior">
+                    <input type="radio" id="idMaior" name="idade" value="Maior que 17 anos">
                     <label for="idMaior">Maior que 17 anos</label><br>
-                </fieldset>
+                </fieldset><br>
 
                 <fieldset>
                     <legend>2 Perfil</legend>
-                    <!-- Descrição | Textarea
-                    Perfil trabalho | Select
-                    Interesses | checkbox -->
-
-                        <label for="txtDescricao">Descrição</label>
-                        <input type="textarea" id="txtDescricao" name="txtDescricao">
+                        <label for="txtDescricao">Descrição:</label><br>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br><br>
                         
-                        <label for="txtSelect">Perfil trabalho</label>
-                        <input type="Select" id="txtSelect" name="txtSelect">
+                        <label for="stPerfil">Perfil trabalho:</label><br>
+                        <select name="stPerfil" id="stPerfil">
+                            <option value="back">Back-end Developer</option>
+                            <option value="front">Front-end Developer</option>
+                            <option value="mobile">Mobile Developer</option>
+                            <option value="back">Full-Stack Developer</option>
+                        </select><br><br>
                         
-                        <label for="Interesses"></label>
+                        <label>Interesses:</label><br>
                         <input type="checkbox" id="idMaior">
                         <label for="css">Programador</label><br>
                         <input type="checkbox" id="idMaior">
                         <label for="css">Design</label><br>
                         <input type="checkbox" id="idMaior">
                         <label for="css">Analista</label><br>
-                </fieldset>
+                </fieldset><br>
+
                 <button type="submit">Enviar dados</button>
         
             </form>
